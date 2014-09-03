@@ -1,0 +1,21 @@
+﻿body,div,ul,ol,li,dl,dt,dd,form,input,textarea,p,th,td,h1,h2,h3,h4{margin:0;padding:0;}
+img{border:0;}
+body,th,td,input,select,textarea,h1,h2,h3,h4{font:15px "microsoft yahei",Tahoma, Geneva, sans-serif;font-weight:normal;}
+html,body{height:100%;}
+body{min-width:800px;background:#dbe2e4 url(../images/login_bg.gif) repeat-x 0 center;overflow:hidden}
+ul,ol{list-style-type:none;}
+input,select,textarea{vertical-align:middle;resize:none;}
+
+/*2013-12-31 - levone -*/
+.login_box{height:100%;background:url(../images/login.png) no-repeat center center}
+.logo{width:726px;height:57px;background:url(../images/logo.gif) no-repeat;position:absolute;left:50%;top:7%;margin-left:-363px;}
+.login{position:absolute;left:50%;top:50%;width:401px;height:210px;margin:-107px 0 0 -254px;z-index:9;display:block;padding:47px 0 0 106px;}
+.login li{height:30px;line-height:30px;padding-bottom:8px;clear:both}
+.login li span{display:block;float:left;width:61px;text-align:right;padding-right:10px;}
+.login li input{background:#fff;border:#bbbcbe 1px solid;border-color:#bbbcbe #e3e5e7 #e3e5e7 #bbbcbe;background:url(../images/inp_bg.gif) no-repeat;height:20px;color:#36a;padding:2px 4px;font-size:14px;border-radius:2px;width:192px;line-height:20px;}
+.login li .login_btn{border:none;font-size:16px;font-weight:bold;color:#fff;text-shadow:#ab5800 1px 1px 2px;width:100px;padding-bottom:2px;line-height:34px;line-height:29px \9;text-align:left;text-indent:18px;cursor:pointer;background:url(../images/login_btn.gif) no-repeat;height:32px;margin-left:-1px;}
+.login li a{font-size:13px;color:#36a;text-decoration:none;margin-left:36px;}
+.yz img{width:100px;height:27px;margin-bottom:-9px;margin-bottom:-5px \9}
+.login li.yz input{width:85px;margin-right:4px;}
+.login li.tips{color:red;font-size:13px;}
+.popyright{position:absolute;left:0;width:100%;text-align:center;font-family:Tahoma, Geneva, sans-serif;font-size:12px;bottom:7%;}
