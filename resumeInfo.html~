@@ -1,0 +1,417 @@
+<!DOCTYPE html><!-- 此声明必须在页面起始位置，任何代码都在此代码下开始 -->
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8" />
+<title>cuiyan's resume</title>
+<link href="stylesheets/layout.css" rel="stylesheet" />
+</head>
+
+<body>
+<div id="header">
+	<h1 class="logo">
+    	<a href="index.html" title="依米花开"><img src="images/logo.png" alt="依米花开"></a>
+    </h1>
+    <div class="headInfo">
+    	<div class="time"></div>
+        <p>
+        	求职意向：JAVA研发工程师
+        </p>
+    </div>
+</div>
+
+<div id="nav">
+    <div class="nav">
+        <h2>
+            <span class="icon1">个人简历</span>
+           <!-- <ul>
+                <li><a href="#">基本信息</a></li>
+                <li><a href="#">专业技能</a></li>
+                <li><a href="#">工作经历</a></li>
+                <li><a href="#">项目经验</a></li>
+                <li><a href="#">教育经历</a></li>
+                <li><a href="#">项目展示</a></li>
+            </ul>-->
+        </h2>
+        <h2>
+            <span class="icon2">技术博客</span>
+            <ul>
+                <li><a href="#">JAVA</a></li>
+                <li><a href="#">ORACLE</a></li>
+                <li><a href="#">其他</a></li>
+            </ul>
+        </h2>      	
+          <h2>
+            <span class="icon4">心灵鸡汤</span>
+            <ul>
+                <li><a href="#">心灵鸡汤</a></li>
+                
+            </ul>
+        </h2>       
+    </div>
+	<div class="leftHide"></div>
+</div>
+
+<div id="content">
+	<div style="height:5px;"></div>
+    <div class="bread">当前位置: 个人简历</div>
+   <div>
+   
+    <div>
+        <div class="tabStyle">
+            <div class="modInfo" style="background:none;">
+                <h3><a href="javascript:;" class="a_slide active"></a><strong>基本信息</strong></h3>
+                <div class="infotable">
+                    <table>
+                      <tr>
+                        <td align="right" width="20%">姓名：</td>
+                        <td width="20%">崔艳</td>
+                        <td align="right" width="20%">性别：</td>
+                        <td width="40%">女</td>
+                      </tr>
+                      <tr>
+                        <td align="right" width="20%">电话：</td>
+                        <td  width="20%">18911328754</td>
+                        <td align="right">已获学历：</td>
+                        <td width="40%">计算机科学与技术 学士学位</td>
+                      </tr>
+                      <tr>
+                        <td align="right">邮箱：</td>
+                        <td>18911328754@163.com</td>
+                        <td align="right">工作经验：</td>
+                        <td>3年
+                        </td>
+                      </tr>
+                      
+                    </table>
+                </div>
+               <h3><a href="javascript:;" ></a><strong>专业技能</strong></h3>
+                <div class="padding20 " style="margin-top:10px;">                	
+                    <table>                       
+                        <tbody>
+                         <tr>
+                            <td >熟练掌握JAVA面向对象编程</td>
+                          </tr>
+                          <tr>
+                            <td>熟练掌握J2EE体系结构</td>
+                          </tr>
+                           <tr>
+                            <td>熟练掌握Spring，Struts，Hibernate，iBATIS等主流开发框架</td>
+                          </tr>
+                         	<tr class="none">
+		                        <td>熟练掌握HTML5，JavaScript，JQuery，AJAX，CSS等前端开发语言</td>
+		                      </tr>
+		                      <tr class="none">
+		                        <td>掌握ORACLE,MySql关系型数据库，熟练掌握SQL语句及ORACLE常用函数</td>                        
+		                      </tr>
+		                      <tr class="none">
+		                        <td>熟练掌握常用Linux命令并在Linux上进行项目部署</td>                                           
+		                      </tr>
+		                      <tr class="none">
+		                        <td>掌握solr搜索引擎，了解倒排索引，搜索引擎分析，索引，查询原理</td>                                          
+		                        </td>
+		                      </tr>
+		                      <tr class="none">
+		                        <td>掌握单例，工厂等常用设计模式</td>                                           
+		                      </tr>
+		                      
+		                      <tr class="none">
+		                        <td>掌握常用算法</td>                                          
+		                      </tr>
+		                      <tr class="none">
+		                        <td>独立编写详细设计文档</td>                                          
+		                      </tr>
+		                      <tr class="none">
+		                        <td>掌握JXL,POI，Tika等富文本解析工具</td>                                          
+		                      </tr>
+		                       <tr class="none">
+		                        <td>具有优秀的开发习惯，能够编写高质量的代码</td>                                          
+		                      </tr>
+		                      <tr>                      
+		                        <td><div class="zk"><a href="javascript:;" class="a_zk">展开</a></div></td>
+		                      </tr>
+                        </tbody>
+                    </table>
+                  
+                </div>
+                <h3><a href="javascript:;" class="a_slide"></a><strong>工作经历</strong></h3>
+                <div class="padding20 none" style="margin-top:10px;">
+                    <table>
+                        <thead>
+                          <tr>
+                            <td>时间</td>
+                            <td>任职公司名称</td>
+                            <td>职务</td>
+                            <td>操作</td>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>201211-201408</td>
+                            <td>中科软科技股份有限公司</td>
+                            <td>开发组长</td>
+                            <td><a href="javascript:;" onClick="slide(this,'查看');" class="checks">查看</a></td>
+                          </tr>
+                          <!--查看 begin-->
+                         <tr>
+                         	<td style="padding:0; border:0;"  colspan="4" align="left">
+                         		<div class="modInfo none">
+                         			<div class="infotable Lefttable">
+                         				工作职责：<br>
+                         				负责项目计划安排及日常开发；
+                         				负责项目进度跟进及项目质量检查；
+                         				负责项目组内的人员招聘季成员培养相关工作。
+                         				
+                         			</div>
+                         		</div>
+                         	</td>
+                         </tr>                           
+                          <!--查看 end-->                          
+                         <tr>
+                            <td>201110-201211</td>
+                            <td>北京达内科技有限公司</td>
+                            <td>JAVA软件开发助教</td>
+                            <td><a href="javascript:;" onClick="slide(this,'查看');" class="checks">查看</a></td>
+                          </tr>
+                           <!--查看 begin-->
+                         <tr>
+                         	<td style="padding:0; border:0;"  colspan="4" align="left">
+                         		<div class="modInfo none">
+                         			<div class="infotable Lefttable">
+                         				工作职责：<br>
+                         				根据公司教学内容体系与讲师一起完成公司的教学工作，针对课程进度制定每周的工作计划，合理安排串讲内容与时间，针对班级教学内容、进度，学员普遍问题、个别问题进行每日、每周总结，完成教学项目(在线考试系统，B2C电子商务平台，物流管理系统)的辅导与验收，以及日常班级的管理工作。
+                         			</div>
+                         		</div>
+                         	</td>
+                         </tr>                           
+                          <!--查看 end-->  
+                        </tbody>
+                    </table>
+                </div>
+                <h3><a href="javascript:;" class="a_slide education"></a><strong>教育经历</strong></h3>
+                <div class="padding20 none" style="margin-top:10px;">               	
+                    <table style=" text-align:center;" >
+                        <thead>
+                          <tr>
+                            <td>时间</td>
+                            <td>地点</td>
+                            <td>专业</td>
+                            <td>学位</td>                  
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>201404-至今</td>
+                            <td>北京交通大学</td>
+                            <td>软件工程</td>
+                            <td>在职硕士在读</td>                         
+                          </tr>
+                           <tr >
+                            <td>200809-201207</td>
+                            <td><a href="#education" id="contrastTable" title="点我试试">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;甘肃农业大学<a></td>
+                            <td>计算机科学与技术</td>
+                            <td>学士学位</td>                         
+                          </tr>                               
+                        </tbody>
+                  </table>
+                </div> 
+                 <h3><a href="javascript:;" class="a_slide"></a><strong>主要项目经历</strong></h3>
+                <div class="none">
+                    <h4><span>阳光保险知识库系统</span></h4>
+                    <div class="padding20 none">
+                        <table style="text-align:left;">                        
+                          <tbody>
+                            <tr>
+                              <td><strong>项目介绍</strong></td>                            
+                            </tr>
+                            <tr>
+                              <td><div>
+                              	知识库系统采用JAVA语言实现，主要为帮助员工自觉， 主动的学习并随时了解自己的的学习情况，上级领导随时掌握员工的学习情况，对不同的员工制定不同的学习计划和学习内容。该系统分为管理端和使用端，包括知识管理、课程管理、考试管理、指标监测4部分功能，分4期上线。
+                              	</div></td>                              
+                            </tr>
+                            <tr>
+                              <td><strong>应用技术</strong></td>                            
+                            </tr>
+                            <tr>
+                              <td>
+                              	<span>该项目整体采用SSH架构；JQuery进行页面校验；ajax技术实现页面局部刷新</span><br>
+																<span>使用Solr实现知识搜索功能，使用jsonp实现搜索中的跨域访问</span><br>
+																<span>使用KindEditor实现知识的编辑功能，包括知识录入、知识内容及格式编辑、文件上传等</span><br>
+																<span>使用swftools0.9.2(Linux Version)，FlexPaper2.2.4实现课程的在线预览功能</span><br>
+																<span>使用JAVA多线程机制实现log日志的写与程序响应分离</span><br>
+																<span>使用log4j记录指标，分析记录指标</span><br>
+																<span>使用JXL实现excel导出</span>
+                              	</td>                              
+                            </tr>
+                            <tr>
+                              <td><strong>职责作用</strong></td>                            
+                            </tr>
+                            <tr>
+                              <td><div>
+                              	负责知识管理模块中搜索功能的设计及开发；负责其余3期功能的设计，开发自测及相关管理工作
+                              	</div></td>                              
+                            </tr>
+                            <tr>
+                              <td><strong>业绩成果</strong></td>                            
+                            </tr>
+                            <tr>
+                              <td><div>
+                              	solr在知识库系统中稳定运行后，在其他项目中实行了推广使用。由我独立完成了核心系统客户查询功能的改造，使用solr实现，并带有拼音搜索和自动提示功能，解决了原来数据库搜索的效率及输入字数限制的问题；并完成多次solr技术使用培训
+                              	</div></td>                              
+                            </tr>
+                          </tbody>
+                          </tbody>
+                        </table>
+                    </div>
+                    <h4><span>阳光保险团体客户查询平台</span></h4>
+                    <div class="padding20 none">                   	
+                        <table  style="text-align:left;">                        
+                          <tbody>
+                          	<tr>
+                             <td><strong>项目介绍</strong></td>                            
+                            </tr>
+                            <tr>
+                              <td><div>
+                              	该项目采用java语言实现，帮助销售人员管理客户、商机、活动，提高工作效率，查询自己的工作业绩，同时可以让上级领导及时了解销售人员，销售团队的工作情况，作出指导，帮助销售人员顺利开展工作
+                              	</div></td>                              
+                            </tr>
+                           	<tr>
+                             <td><strong>应用技术</strong></td>                            
+                            </tr>
+                            <tr>
+                              <td><div>
+                              	系统采用SSI框架实现，页面采用HTML5技术，ajax异步加载，ajaxfileupload实现ftp服务器上传和下载
+                              	</div></td>                              
+                            </tr>
+                            	<tr>
+                             <td><strong>职责作用</strong></td>                            
+                            </tr>
+                            <tr>
+                              <td><div>
+                              	为该项目的负责人，负责项目调研，设计说明书编写，数据库设计，技术实现及项目管理工作。
+                              	</div></td>                              
+                            </tr>
+                             	<tr>
+                             <td><strong>业绩成果</strong></td>                            
+                            </tr>
+                            <tr>
+                              <td><div>
+                              	制定项目开发计划，指导小组成员解决开发过程中遇到的问题，每日进行代码规范及代码功能检查；完成单元测试、性能测试后，查找程序漏洞并修复代码，该项目实现0bug上线，上线后0功能性bug运行；项目上线使用后，负责项目培训。
+                              	</div></td>                              
+                            </tr>
+                          </tbody>
+                        </table>
+                    </div>
+                </div>
+                <h3><a href="javascript:;" class="a_slide"></a><strong>项目展示</strong></h3>
+                <div class="padding20 none" style="margin-top:10px;">               	
+                    <table style=" text-align:center;" >
+                        <tbody>
+                          <tr>
+                            <td style="font-size:30px;">知识库系统</td>                        
+                          </tr>
+                          <tr>
+                            <td align="left">知识创建界面</td>                        
+                          </tr>
+                           <tr >
+                            <td>
+                            	<div>
+                            	<img src="images/cjzs.jpg" class="xmzs" style="width:100%;"></img>
+                            	</div>	
+                            </td>                   
+                          </tr>   
+                          <tr>
+                            <td align="left">知识使用初始化界面</td>                        
+                          </tr>
+                           <tr >
+                            <td>
+                            	<div>
+                            	<img src="images/zsss_xjm.jpg" class="xmzs" ></img>
+                            	</div>	
+                            </td>                   
+                          </tr> 
+                          <tr>
+                            <td align="left">知识搜索结果界面</td>                        
+                          </tr>
+                           <tr >
+                            <td>
+                            	<div>
+                            	<img src="images/ssjg.jpg" class="xmzs" style="width:100%;"></img>
+                            	</div>	
+                            </td>                   
+                          </tr>    
+                           <tr>
+                            <td align="left">知识使用功能界面</td>                        
+                          </tr>
+                           <tr >
+                            <td>
+                            	<div>
+                            	<img src="images/wdsc.jpg" class="xmzs" style="width:100%;"></img>
+                            	</div>	
+                            </td>                   
+                          </tr> 
+                          <tr>
+                            <td align="left">在线学习课程界面</td>                        
+                          </tr>
+                           <tr >
+                            <td>
+                            	<div>
+                            	<img src="images/zxxx.jpg" class="xmzs" style="width:100%;"></img>
+                            	</div>	
+                            </td>                   
+                          </tr>                             
+                        </tbody>
+                  </table>
+                </div> 
+            </div>
+            <div style="height:95px;"></div>
+           
+        </div>
+    </div>
+</div>
+
+
+<div class="showdiv">
+    <table>
+        <tbody>
+            <tr><th align="">连续三年获国家励志奖学金</th></tr>
+            <tr><th align="">获全国大学生数学建模竞赛校级一等奖</th></tr>
+            <tr><th align="">连续三年或校级优秀学生干部称号</th></tr>
+            <tr><th align="">连续四年任计算机班副班长，组织过2次班级中秋晚会，1次班级集体外出活动</th></tr>
+            <tr><th align="">连续两年任学院编辑部主编，主编学院4期院刊，创办学院第一本电子院刊</th></tr>
+            <tr><th align="">获甘肃省军训征文三等奖</th></tr>
+            <img src="images/normal_1.png" class="icoJt">
+        </tbody>
+    </table>
+</div>
+<!--[if lte IE 6]>
+<script src="scripts/ie6.png.js"></script>
+<![endif]--> 
+<script src="javascripts/jquery-1.9.1.min.js"></script> 
+<script src="javascripts/public.js"></script>
+<script>
+$(function(){
+	//修改为点击整行显示和展开后点击doucment隐藏
+	$("#contrastTable").click(function(){				
+		var top = $(this).offset().top - 210;
+		var left = $(this).width()/2+200;
+		
+		if($(this).parent().is("td")){
+			$('.showdiv').css({'left':left,'top':top}).show(200,function(){
+				$(document).bind("click",showToggle);
+			});
+		}else{
+			$('.showdiv').hide(200);
+		}	
+	})
+});
+function showToggle(event){
+	if($(event.target).is("#contrastTable td,#contrastTable a")){
+		return false;
+	}else{
+		$('.showdiv').hide(200);
+	}
+	$(document).unbind("click");
+}	
+</script>
+</body>
+</html>
