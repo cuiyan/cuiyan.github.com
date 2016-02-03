@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>WeUI</title>
+    <link rel="stylesheet" href="../style/weui.css"/>
+    <link rel="stylesheet" href="./example.css"/>
+</head>
+<body ontouchstart>
+    <div class="container js_container">
+
+    </div>
+    <script type="text/html" id="tpl_home">
+<div class="page">
+    <div class="hd">
+        <h1 class="page_title">华龄健康365</h1>
+    </div>
+    <div class="bd">
+        <div class="weui_grids">
+            <a href="javascript:;" class="weui_grid js_grid" data-id="button">
+                <div class="weui_grid_icon">
+                    <img src="./images/icon_nav_button.png" alt="">
+                </div>
+                <p class="weui_grid_label">
+                    常规数据
+                </p>
+            </a>
+            <a href="javascript:;" class="weui_grid js_grid" data-id="cell">
+                <div class="weui_grid_icon">
+                    <img src="./images/icon_nav_cell.png" alt="">
+                </div>
+                <p class="weui_grid_label">
+                    基础体征
+                </p>
+            </a>
+            <a href="javascript:;" class="weui_grid js_grid" data-id="toast">
+                <div class="weui_grid_icon">
+                    <img src="./images/icon_nav_toast.png" alt="">
+                </div>
+                <p class="weui_grid_label">
+                    血糖
+                </p>
+            </a>
+            <a href="javascript:;" class="weui_grid js_grid" data-id="dialog">
+                <div class="weui_grid_icon">
+                    <img src="./images/icon_nav_dialog.png" alt="">
+                </div>
+                <p class="weui_grid_label">
+                    医院检查记录
+                </p>
+            </a>
+            <a href="javascript:;" class="weui_grid js_grid" data-id="progress">
+                <div class="weui_grid_icon">
+                    <img src="./images/icon_nav_button.png" alt="">
+                </div>
+                <p class="weui_grid_label">
+                    疾病记录
+                </p>
+            </a>
+            <a href="javascript:;" class="weui_grid js_grid" data-id="medical">
+                <div class="weui_grid_icon">
+                    <img src="./images/icon_nav_msg.png" alt="">
+                </div>
+                <p class="weui_grid_label">
+                    用药记录
+                </p>
+            </a>
+            <a href="javascript:;" class="weui_grid js_grid" data-id="article">
+                <div class="weui_grid_icon">
+                    <img src="./images/icon_nav_article.png" alt="">
+                </div>
+                <p class="weui_grid_label">
+                    生活习惯记录
+                </p>
+            </a>
+            <a href="javascript:;" class="weui_grid js_grid" data-id="actionsheet">
+                <div class="weui_grid_icon">
+                    <img src="./images/icon_nav_actionSheet.png" alt="">
+                </div>
+                <p class="weui_grid_label">
+                    心里评估
+                </p>
+            </a>
+            <a href="javascript:;" class="weui_grid js_grid" data-id="icons">
+                <div class="weui_grid_icon">
+                    <img src="./images/icon_nav_icons.png" alt="">
+                </div>
+                <p class="weui_grid_label">
+                    健康评估
+                </p>
+            </a>
+        </div>
+    </div>
+</div>
+</script>
+    <script type="text/html" id="tpl_button">
+<div class="page">
+    <div class="hd">
+        <h1 class="page_title">常规数据</h1>
+    </div>
+        <div class="weui_cells weui_cells_form">
+            <div class="weui_cell">
+                <div class="weui_cell_hd"><label for="" class="weui_label">体检日期</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="date" value=""/>
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_hd"><label class="weui_label">身高（cm）</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="tel" placeholder="请输入身高"/>
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_hd"><label class="weui_label">体重（kg）</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="tel" placeholder="请输入体重"/>
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_hd"><label class="weui_label">胸围（cm）</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="tel" placeholder="请输入胸围"/>
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_hd"><label class="weui_label">臀围（cm）</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="tel" placeholder="请输入臀围"/>
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_hd"><label class="weui_label">腰围（cm）</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="tel" placeholder="请输入腰围"/>
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_hd"><label class="weui_label">左眼视力</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="tel" placeholder="请输入左眼视力"/>
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_hd"><label class="weui_label">右眼视力</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="tel" placeholder="请输入右眼视力"/>
+                </div>
+            </div>
+            <div class="weui_cell">
+            </div>
+            <!--<div class="weui_cell weui_cell_select weui_select_after">
+                <div class="weui_cell_hd">
+                    基本血型
+                </div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <select class="weui_select" name="select2">
+                        <option value="0">O型</option>
+                        <option value="1">A型</option>
+                        <option value="2">B型</option>
+                        <option value="3">AB型</option>
+                        <option value="5" selected="selected">未知</option>
+                    </select>
+                </div>
+            </div>
+            <div class="weui_cell weui_cell_select weui_select_after">
+                <div class="weui_cell_hd">
+                    Rh血型
+                </div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <select class="weui_select" name="select2">
+                        <option value="0">Rh阳性</option>
+                        <option value="1">Rh阴性</option>
+                        <option value="3" selected="selected">未知</option>
+                    </select>
+                </div>
+            </div>
+        </div>-->
+        
+        <div class="weui_btn_area">
+            <a href="javascript:;" class="js_grid weui_btn weui_btn_primary" data-id="msg">
+                确定
+            </a>
+            <a href="" class="weui_btn weui_btn_default">
+                返回
+            </a>
+        </div>
+         
+</div>
+</script>
+    <script type="text/html" id="tpl_cell">
+<div class="page">
+    <div class="hd">
+        <h1 class="page_title">基础体征</h1>
+    </div>
+
+        <div class="weui_cells weui_cells_form">
+            <div class="weui_cell">
+                <div class="weui_cell_hd"><label for="" class="weui_label">体检日期</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="date" value=""/>
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_hd"><label class="weui_label">心率</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="tel" placeholder="请输入心率"/>
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_hd"><label class="weui_label">血氧</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="tel" placeholder="请输入血氧"/>
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_hd"><label class="weui_label">收缩压</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="tel" placeholder="请输入收缩压"/>
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_hd"><label class="weui_label">舒张压</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="tel" placeholder="请输入舒张压"/>
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_hd"><label class="weui_label">呼吸率</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="tel" placeholder="请输入呼吸率"/>
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_hd"><label class="weui_label">体温</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="tel" placeholder="请输入体温"/>
+                </div>
+            </div>
+            <div class="weui_cell">
+            </div>
+            <!--<div class="weui_cell weui_cell_select weui_select_after">
+                <div class="weui_cell_hd">
+                    基本血型
+                </div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <select class="weui_select" name="select2">
+                        <option value="0">O型</option>
+                        <option value="1">A型</option>
+                        <option value="2">B型</option>
+                        <option value="3">AB型</option>
+                        <option value="5" selected="selected">未知</option>
+                    </select>
+                </div>
+            </div>
+            <div class="weui_cell weui_cell_select weui_select_after">
+                <div class="weui_cell_hd">
+                    Rh血型
+                </div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <select class="weui_select" name="select2">
+                        <option value="0">Rh阳性</option>
+                        <option value="1">Rh阴性</option>
+                        <option value="3" selected="selected">未知</option>
+                    </select>
+                </div>
+            </div>
+        </div>-->
+        
+        <div class="weui_btn_area">
+            <a href="javascript:;" class="js_grid weui_btn weui_btn_primary" data-id="msg">
+                确定
+            </a>
+            <a href="" class="weui_btn weui_btn_default">
+                返回
+            </a>
+        </div>
+
+</div>
+</script>
+    <script type="text/html" id="tpl_toast">
+<div class="page">
+    <div class="hd">
+        <h1 class="page_title">血糖</h1>
+    </div>
+        <div class="weui_cells weui_cells_form">
+            <div class="weui_cell">
+                <div class="weui_cell_hd"><label for="" class="weui_label">采集日期</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="date" value=""/>
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_hd"><label class="weui_label">午夜</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="tel" placeholder="请输入午夜血糖"/>
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_hd"><label class="weui_label">早餐前</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="tel" placeholder="请输入早餐前血糖"/>
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_hd"><label class="weui_label">早餐后</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="tel" placeholder="请输入早餐后血糖"/>
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_hd"><label class="weui_label">午餐前</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="tel" placeholder="请输入午餐前血糖"/>
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_hd"><label class="weui_label">午餐后</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="tel" placeholder="请输入午餐后血糖"/>
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_hd"><label class="weui_label">晚餐前</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="tel" placeholder="请输入晚餐前血糖"/>
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_hd"><label class="weui_label">晚餐后</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="tel" placeholder="请输入晚餐后血糖"/>
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_hd"><label class="weui_label">午夜</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="tel" placeholder="请输入午夜血糖"/>
+                </div>
+            </div>
+           
+            <!--<div class="weui_cell weui_cell_select weui_select_after">
+                <div class="weui_cell_hd">
+                    基本血型
+                </div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <select class="weui_select" name="select2">
+                        <option value="0">O型</option>
+                        <option value="1">A型</option>
+                        <option value="2">B型</option>
+                        <option value="3">AB型</option>
+                        <option value="5" selected="selected">未知</option>
+                    </select>
+                </div>
+            </div>
+            <div class="weui_cell weui_cell_select weui_select_after">
+                <div class="weui_cell_hd">
+                    Rh血型
+                </div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <select class="weui_select" name="select2">
+                        <option value="0">Rh阳性</option>
+                        <option value="1">Rh阴性</option>
+                        <option value="3" selected="selected">未知</option>
+                    </select>
+                </div>
+            </div>
+        </div>-->
+        </div>
+        <div class="weui_btn_area">
+            <a href="javascript:;" class="js_grid weui_btn weui_btn_primary" data-id="msg">
+                确定
+            </a>
+            <a href="" class="weui_btn weui_btn_default">
+                返回
+            </a>
+        </div>
+ 
+
+
+
+</div>
+</script>
+    <script type="text/html" id="tpl_dialog">
+<div class="page">
+    <div class="hd">
+        <h1 class="page_title">档案信息</h1>
+    </div>
+    <div class="weui_cells weui_cells_form">
+            <div class="weui_cell">
+                <div class="weui_cell_hd"><label for="" class="weui_label">档案日期</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="date" value=""/>
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_hd"><label class="weui_label">医疗机构</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="tel" placeholder="请输入医疗机构名称"/>
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_hd"><label class="weui_label">医疗机构等级</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <select class="weui_select" name="select2">
+                        <option value=""></option>
+                        <option value="A1">三级特（甲）</option>
+                        <option value="A2">三级甲</option>
+                        <option value="A3">三级乙</option>
+                        <option value="A4">三级丙</option>
+                        <option value="B1">二级甲</option>
+                        <option value="B2">二级乙</option>
+                        <option value="B3">二级丙</option>
+                        <option value="C1">一级甲</option>
+                        <option value="C2">一级乙</option>
+                        <option value="C3">一级丙</option>
+                    </select>
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_hd"><label class="weui_label">档案内容</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <select class="weui_select" name="select2">
+                        <option value=""></option>
+                        <option value="BRT">血常规</option>
+                        <option value="URT">尿常规</option>
+                        <option value="LF">肝功</option>
+                        <option value="RF">肾功</option>
+                        <option value="BF">血脂</option>
+                        <option value="IPC">非接触式眼压</option>
+                        <option value="CH">胸部正位</option>
+                        <option value="OE">口腔检查</option>
+                        <option value="O">其他</option>
+                    </select>
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_hd"><label class="weui_label">备注</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="tel"/>
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_hd"><label class="weui_label">档案文件</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <div class="weui_uploader">
+                        <div class="weui_uploader_bd">
+                            <ul class="weui_uploader_files">
+                                <li class="weui_uploader_file" style="background-image:url(http://shp.qpic.cn/weixinsrc_pic/pScBR7sbqjOBJomcuvVJ6iacVrbMJaoJZkFUIq4nzQZUIqzTKziam7ibg/)"></li>
+                                <li class="weui_uploader_file" style="background-image:url(http://shp.qpic.cn/weixinsrc_pic/pScBR7sbqjOBJomcuvVJ6iacVrbMJaoJZkFUIq4nzQZUIqzTKziam7ibg/)"></li>
+                                <li class="weui_uploader_file" style="background-image:url(http://shp.qpic.cn/weixinsrc_pic/pScBR7sbqjOBJomcuvVJ6iacVrbMJaoJZkFUIq4nzQZUIqzTKziam7ibg/)"></li>
+                                <li class="weui_uploader_file weui_uploader_status" style="background-image:url(http://shp.qpic.cn/weixinsrc_pic/pScBR7sbqjOBJomcuvVJ6iacVrbMJaoJZkFUIq4nzQZUIqzTKziam7ibg/)">
+                                    <div class="weui_uploader_status_content">
+                                        <i class="weui_icon_warn"></i>
+                                    </div>
+                                </li>
+                                <li class="weui_uploader_file weui_uploader_status" style="background-image:url(http://shp.qpic.cn/weixinsrc_pic/pScBR7sbqjOBJomcuvVJ6iacVrbMJaoJZkFUIq4nzQZUIqzTKziam7ibg/)">
+                                    <div class="weui_uploader_status_content">50%</div>
+                                </li>
+                            </ul>
+                            <div class="weui_uploader_input_wrp">
+                                <input class="weui_uploader_input" type="file" accept="image/jpg,image/jpeg,image/png,image/gif" multiple />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+           
+          
+           
+            <!--<div class="weui_cell weui_cell_select weui_select_after">
+                <div class="weui_cell_hd">
+                    基本血型
+                </div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <select class="weui_select" name="select2">
+                        <option value="0">O型</option>
+                        <option value="1">A型</option>
+                        <option value="2">B型</option>
+                        <option value="3">AB型</option>
+                        <option value="5" selected="selected">未知</option>
+                    </select>
+                </div>
+            </div>
+            <div class="weui_cell weui_cell_select weui_select_after">
+                <div class="weui_cell_hd">
+                    Rh血型
+                </div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <select class="weui_select" name="select2">
+                        <option value="0">Rh阳性</option>
+                        <option value="1">Rh阴性</option>
+                        <option value="3" selected="selected">未知</option>
+                    </select>
+                </div>
+            </div>
+        </div>-->
+        </div>
+        <div class="weui_btn_area">
+            <a href="javascript:;" class="js_grid weui_btn weui_btn_primary" data-id="msg">
+                确定
+            </a>
+            <a href="" class="weui_btn weui_btn_default">
+                返回
+            </a>
+        </div>
+</div>
+</script>
+    <script type="text/html" id="tpl_progress">
+<div class="page">
+        <div class="hd">
+            <h1 class="page_title">疾病信息</h1>
+        </div>
+        <div class="weui_cells weui_cells_form">
+            <div class="weui_cell">
+                <div class="weui_cell_hd"><label for="" class="weui_label">疾病名称</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <select class="weui_select" name="select2">
+                        <option value="">请选择</option>
+                        <option value="1">高血压</option>
+                        <option value="2">糖尿病</option>
+                        <option value="3">冠心病</option>
+                        <option value="4">高血脂</option>
+                        <option value="5">恶性肿瘤</option>
+                        <option value="6">脑中风</option>
+                        <option value="7">动脉硬化</option>
+                        <option value="8">退化性关节炎</option>
+                        <option value="9">骨质疏松</option>
+                        <option value="10">老年痴呆</option>
+                        <option value="99">其他</option>
+                    </select>
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_hd"><label for="" class="weui_label">确诊日期</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="date" value=""/>
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_hd"><label class="weui_label">确诊医院</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="tel" placeholder="请输入确诊医院"/>
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_hd"><label class="weui_label">备注</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="tel"/>
+                </div>
+            </div>
+        </div>
+        <div class="weui_btn_area">
+            <a href="javascript:;" class="js_grid weui_btn weui_btn_primary" data-id="msg">
+                确定
+            </a>
+            <a href="" class="weui_btn weui_btn_default">
+                返回
+            </a>
+        </div>
+</div>
+</script>
+    <script type="text/html" id="tpl_msg">
+<div class="page">
+    <div class="weui_msg">
+        <div class="weui_icon_area"><i class="weui_icon_success weui_icon_msg"></i></div>
+        <div class="weui_text_area">
+            <h2 class="weui_msg_title">操作成功</h2>
+        </div>
+        <div class="weui_opr_area">
+            <p class="weui_btn_area">
+                <a href="" class="weui_btn weui_btn_primary">确定</a>
+            </p>
+        </div>
+    </div>
+</div>
+</script>
+    <script type="text/html" id="tpl_article">
+<div class="page">
+    <div class="hd">
+        <h1 class="page_title">生活习惯记录</h1>
+    </div>
+    <div class="bd">
+        <article class="weui_article">
+            待定。。。
+        </article>
+    </div>
+</div>
+</script>
+    <script type="text/html" id="tpl_medical">
+<div class="page">
+        <div class="hd">
+            <h1 class="page_title">用药信息</h1>
+        </div>
+        <div class="weui_cells weui_cells_form">
+            <div class="weui_cell">
+                <div class="weui_cell_hd"><label class="weui_label">药物名称</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="tel" placeholder="请输入药物名称"/>
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_hd"><label for="" class="weui_label">对应疾病</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <select class="weui_select" name="select2">
+                        <option value="">请选择</option>
+                        <option value="1">高血压</option>
+                        <option value="2">糖尿病</option>
+                        <option value="3">冠心病</option>
+                        <option value="4">高血脂</option>
+                        <option value="5">恶性肿瘤</option>
+                        <option value="6">脑中风</option>
+                        <option value="7">动脉硬化</option>
+                        <option value="8">退化性关节炎</option>
+                        <option value="9">骨质疏松</option>
+                        <option value="10">老年痴呆</option>
+                        <option value="99">其他</option>
+                    </select>
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_hd"><label for="" class="weui_label">药物类型</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <select class="weui_select" name="select2">
+                        <option value="">请选择</option>
+                        <option value="1">医嘱开药</option>
+                        <option value="2">自主选药</option>
+                    </select>
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_hd"><label for="" class="weui_label">用药频次</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <select class="weui_select" name="select2">
+                        <option value="">请选择</option>
+                        <option value="1">每天1次</option>
+                        <option value="2">每天2次</option>
+                        <option value="3">每天3次</option>
+                        <option value="4">每天多余3次</option>
+                        <option value="5">每周1-3次</option>
+                        <option value="6">每月1-3次</option>
+                        <option value="7">隔天一次</option>
+                    </select>
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_hd"><label class="weui_label">每天用药量</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="tel" placeholder="请输入药物名称"/>
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_hd"><label for="" class="weui_label">用药状态</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <select class="weui_select" name="select2">
+                        <option value="">请选择</option>
+                        <option value="1">规律用药</option>
+                        <option value="2">偶尔忘记服药</option>
+                        <option value="3">经常忘记服药</option>
+                    </select>
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_hd"><label class="weui_label">备注</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="tel"/>
+                </div>
+            </div>
+        </div>
+        <div class="weui_btn_area">
+            <a href="javascript:;" class="js_grid weui_btn weui_btn_primary" data-id="msg">
+                确定
+            </a>
+            <a href="" class="weui_btn weui_btn_default">
+                返回
+            </a>
+        </div>
+</div>
+</script>
+    <script type="text/html" id="tpl_actionsheet">
+<div class="page" style="overflow: hidden">
+    <div class="hd">
+        <h1 class="page_title">心理评估</h1>
+    </div>
+   <div class="bd">
+        <article class="weui_article">
+            待定。。。
+        </article>
+    </div>
+</div>
+</script>
+    <script type="text/html" id="tpl_icons">
+<div class="page">
+    <div class="hd">
+        <h1 class="page_title">最新健康评估</h1>
+    </div>
+    
+        <article class="weui_article">
+            <section>
+                <h2 class="title">最近一次健康评估： 2016年01月27日 评估机构：艾科泰克老年病医院 评估结果：    定期检测</h2>
+                <section>
+                    <p>尊敬的李卓娜女士:对于您2016年01月27日的健康评估结果，现补充说明如下：您近期检查的身材很匀称生活习惯很健康。由于您没有提供血氧数据，我们无法对您的呼吸循环情况做出评价。希望您下次提供相关数据我们再行更加详细的健康评估。由于您没有提供心率数据，我们无法对您是否有心律失常情况做出评价。希望您下次提供相关数据我们再行更加详细的健康评估。由于您没有提供血压数据，我们无法对您的血压情况做出评价。希望您下次提供相关数据我们再行更加详细的健康评估。</p>
+                </section>
+            </section>
+        </article>
+        <div class="weui_btn_area">
+            <a href="javascript:;" class="js_grid weui_btn weui_btn_primary" data-id="msg">
+                查看完整报告
+            </a>
+            <a href="" class="weui_btn weui_btn_default">
+                返回
+            </a>
+        </div>
+</div>
+</script>
+    <script src="./zepto.min.js"></script>
+    <script src="./example.js"></script>
+</body>
+</html>
