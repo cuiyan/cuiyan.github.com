@@ -296,6 +296,7 @@
 
         // Bind the document click event handler
         if (!documentClickAssigned) {
+            console.log("----------------");
             $(document).click(function (e) {
                 // Dismiss all non-prompt popups
                 var $target = $(e.target);
